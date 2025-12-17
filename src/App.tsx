@@ -1,19 +1,26 @@
-import { useState } from 'react';
-import { Search, Plus, LogOut } from 'lucide-react';
-import { useAuth } from '@/hooks/useAuth';
-import { useJobs } from '@/hooks/useJobs';
-import { Job, JobStatus, JobFormData } from '@/types';
-import { SignIn } from '@/components/Auth/SignIn';
-import { StatsBar } from '@/components/Stats/StatsBar';
-import { Board } from '@/components/Board/Board';
-import { AddJobModal } from '@/components/Modals/AddJobModal';
-import { JobDetailModal } from '@/components/Modals/JobDetailModal';
+import { useState } from "react";
+import { Search, Plus, LogOut } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
+import { useJobs } from "@/hooks/useJobs";
+import { Job, JobStatus, JobFormData } from "@/types";
+import { SignIn } from "@/components/Auth/SignIn";
+import { StatsBar } from "@/components/Stats/StatsBar";
+import { Board } from "@/components/Board/Board";
+import { AddJobModal } from "@/components/Modals/AddJobModal";
+import { JobDetailModal } from "@/components/Modals/JobDetailModal";
 
 function App() {
   const { user, loading: authLoading, signInWithGoogle, signOut } = useAuth();
-  const { jobs, loading: jobsLoading, addJob, updateJob, deleteJob, getStats, getFilteredJobs } = useJobs(user);
-  
-  const [searchTerm, setSearchTerm] = useState('');
+  const {
+    loading: jobsLoading,
+    addJob,
+    updateJob,
+    deleteJob,
+    getStats,
+    getFilteredJobs,
+  } = useJobs(user);
+
+  const [searchTerm, setSearchTerm] = useState("");
   const [showAddModal, setShowAddModal] = useState(false);
   const [selectedJob, setSelectedJob] = useState<Job | null>(null);
 
