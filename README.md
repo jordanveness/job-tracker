@@ -2,20 +2,20 @@
 
 A full-stack Kanban-style web application for managing job applications. Built with React, TypeScript, and Firebase.
 
-**Live Demo:** [job-tracker.netlify.app](https://job-tracker.netlify.app)
+**Live Demo:** [jobssearchttracker.netlify.app](https://jobssearchtracker.netlify.app/)
 
 ---
 
 ## Overview
 
-Job Search Tracker helps users manage their job application pipeline visually. Applications can be tracked from initial submission through to offer or rejection using a drag-and-drop Kanban board. Data syncs in real-time across devices via Firebase.
+Job Search Tracker helps users manage their job application pipeline visually. Applications can be tracked from initial submission through to offer or rejection using a drag-and-drop Kanban board. Data syncs in real time across devices via Firebase.
 
 ### Why I Built This
 
-During my job search, I found existing tools like Trello difficult to maintain consistently. Spreadsheets became unwieldy as applications grew. I needed a purpose-built solution with:
+During my job search, I found existing tools like Trello difficult to maintain consistently. Spreadsheets became difficult to manage as applications grew. I needed a purpose-built solution with:
 
 - A visual pipeline showing application stages at a glance
-- Quick data entry with job-specific fields (salary, recruiter, deadlines)
+- Quick data entry with job specific fields (salary, recruiter, deadlines)
 - Cross-device access without manual syncing
 - Simple, focused interface without unnecessary features
 
